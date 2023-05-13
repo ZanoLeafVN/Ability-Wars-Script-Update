@@ -1,0 +1,125 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("Ability Wars Script (UPDATE)", "Ocean")
+
+local Tab = Window:NewTab("Script")
+
+local Section = Tab:NewSection("Script Mobile")
+
+Section:NewButton("Ability Wars by vxle", "ButtonInfo", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/VxleLUA/Dynamic-Offical/main/System/GameChecker.lua"))()
+
+    print("Clicked")
+
+end)
+
+Section:NewButton("AWD Public", "ButtonInfo", function()
+
+loadstring(game:HttpGet("https://paste.ee/r/Wo5Kj"))()
+
+    print("Clicked")
+
+end)
+
+local Section = Tab:NewSection("Script PC")
+
+Section:NewButton("Ability Wars by naed & torvelis", "ButtonInfo", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TORVELIS/Ability-Wars1/main/Ability%20Wars2.lua"))()
+
+    print("Clicked")
+
+end)
+
+local Tab = Window:NewTab("Hitbox")
+
+local Section = Tab:NewSection("Hitbox Extender")
+
+Section:NewButton("Hitbox", "ButtonInfo", function()
+
+_G.HeadSize = 8
+
+_G.Disabled = true
+
+ 
+
+game:GetService('RunService').RenderStepped:connect(function()
+
+if _G.Disabled then
+
+for i,v in next, game:GetService('Players'):GetPlayers() do
+
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+
+pcall(function()
+
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+
+v.Character.HumanoidRootPart.Transparency = 0.7
+
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really red")
+
+v.Character.HumanoidRootPart.Material = "Neon"
+
+v.Character.HumanoidRootPart.CanCollide = false
+
+end)
+
+end
+
+end
+
+end
+
+end)
+
+    print("Clicked")
+
+end)
+
+local Tab = Window:NewTab("Fly GUI")
+
+local Section = Tab:NewSection("Fly GUI by a00pkidd")
+
+Section:NewButton("Fly GUI", "ButtonInfo", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ZanoLeafVN/Fly-GUI-by-a00pkidd/main/Fly%20GUI%20by%20a00pkidd"))();
+
+    print("Clicked")
+
+end)
+
+local Tab = Window:NewTab("Keyboard")
+
+local Section = Tab:NewSection("Keyboard V2")
+
+Section:NewButton("Keyboard", "ButtonInfo", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ZanoLeafVN/Keyboard/main/Keyboard%20script"))();
+
+    print("Clicked")
+
+end)
+
+local Tab = Window:NewTab("Player")
+
+local Section = Tab:NewSection("Speed & JumpPower")
+
+Section:NewSlider("WalkSpeed", "SliderInfo", 100, 0, function(s) -- 100 (MaxValue) | 0 (MinValue)
+
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+
+end)
+
+Section:NewSlider("JumpPower", "SliderInfo", 120, 0, function(s) -- 120 (MaxValue) | 0 (MinValue)
+
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+
+end)
+
+local Tab = Window:NewTab("Info")
+
+local Section = Tab:NewSection("Script i made")
+
+local Section = Tab:NewSection("Sub to team a00pkidd")
