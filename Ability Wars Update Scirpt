@@ -1,3 +1,11 @@
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+
+	Title = "WELCOME";	Text = "ENJOY FOR SCRIPT";
+
+	Icon = "rbxthumb://type=Asset&id=13424131383&w=150&h=150"})
+
+Duration = 5;
+
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
 local Window = Library.CreateLib("Ability Wars Script (UPDATE)", "Ocean")
