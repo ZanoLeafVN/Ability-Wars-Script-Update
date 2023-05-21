@@ -20,7 +20,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/VxleLUA/Dynamic-Offic
 
     print("Clicked")
 
-end)g
+end)
 
 Section:NewButton("AWD Public", "ButtonInfo", function()
 
