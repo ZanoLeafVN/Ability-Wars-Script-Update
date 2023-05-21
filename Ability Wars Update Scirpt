@@ -6,9 +6,9 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 
 Duration = 5;
 
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/Test.lua"))();
 
-local Window = Library.CreateLib("Ability Wars Script (UPDATE)", "Ocean")
+local Window = Library.CreateLib("Ability Wars Script (UPDATE)", "GrapeTheme")
 
 local Tab = Window:NewTab("Script")
 
@@ -20,7 +20,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/VxleLUA/Dynamic-Offic
 
     print("Clicked")
 
-end)
+end)g
 
 Section:NewButton("AWD Public", "ButtonInfo", function()
 
